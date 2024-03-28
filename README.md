@@ -1,4 +1,20 @@
-# Overview
+<h1 align="center">GeoAuxNet: Towards Universal 3D Representation Learning for Multi-sensor Point Clouds</h1>
+
+<div align='center'>
+Shengjun Zhang, Xin Fei, Yueqi Duan
+</div>
+<div align='center'>
+Department of Electronic Engineering, Tsinghua University
+</div>
+<div align='center'>
+Department of Automation, Tsinghua University
+</div>
+
+<div id='result image'>
+
+</div>
+
+## Overview
 - [Installation](#installation)
 - [Data Preparation](#data-preparation)
 - [Quick Start](#quick-start)

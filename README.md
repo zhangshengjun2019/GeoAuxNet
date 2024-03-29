@@ -1,7 +1,7 @@
 <h1 align="center">GeoAuxNet: Towards Universal 3D Representation Learning for Multi-sensor Point Clouds</h1>
 
 <div align='center'>
-Shengjun Zhang, Xin Fei, Yueqi Duan
+Shengjun Zhang, Xin Fei, <a href='https://duanyueqi.github.io/'>Yueqi Duan</a>
 </div>
 <div align='center'>
 Department of Electronic Engineering, Tsinghua University
@@ -10,9 +10,39 @@ Department of Electronic Engineering, Tsinghua University
 Department of Automation, Tsinghua University
 </div>
 
-<div id='result image'>
-
+<div align='center'>
+<a href="https://arxiv.org/pdf/2403.19220.pdf">View CVPR 2024 Paper Here</a>
 </div>
+
+<div id='result image' style='margin-top: 10px'>
+<img src='figure/visual_result.png'>
+<p align='center'>Semantic segmentation results on S3DIS and ScanNet from RGB-D cameras and SemanticKITTI from LiDAR. For
+all methods, we trained collectively on three datasets. Our method outperforms other methods with better detailed structures.</p>
+</div>
+
+<div style="width: 100%; text-align: center;">
+    <table style="margin: 0 auto;">
+        <thead>
+            <tr>
+                <th style="text-align: center;">Model</th>
+                <th style="text-align: center;">Params</th>
+                <th style="text-align: center;">S3DIS mIoU</th>
+                <th style="text-align: center;">ScanNet mIoU</th>
+                <th style="text-align: center;">SemanticKITTI mIoU</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">GeoAuxNet (joint)</td>
+                <td style="text-align: center;">64.7M</td>
+                <td style="text-align: center;">69.5</td>
+                <td style="text-align: center;">71.3</td>
+                <td style="text-align: center;">63.8</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
 ## Overview
 - [Installation](#installation)
@@ -43,7 +73,7 @@ pip install torch-geometric
 pip install faiss-gpu
 
 # spconv (SparseUNet)
-# refer https://github.com/traveller59/spconv
+# refer GitHub - traveller59/spconv: Spatial Sparse Convolution Library
 pip install spconv-cu117
 
 # PTv1 & PTv2 or precise eval
@@ -219,4 +249,3 @@ sh scripts/test.sh -p python -d s3dis -n semseg-geo-s3-sc-sk -w model_best -g 1
 export PYTHONPATH=./
 python tools/test.py --config-file configs/s3dis/semseg-geo-s3-sc-sk.py --options save_path=exp/s3dis/semseg-geo-s3-sc-sk weight=exp/s3dis/semseg-geo-s3-sc-sk/model/model_best.pth --num-gpus 1
 ```
-

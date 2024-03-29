@@ -15,7 +15,7 @@ Department of Automation, Tsinghua University
 </div>
 
 <div id='result image' style='margin-top: 10px'>
-<img src='figure/visual_result.png'>
+<img src='result.png'>
 <p align='center'>Semantic segmentation results on S3DIS and ScanNet from RGB-D cameras and SemanticKITTI from LiDAR. For
 all methods, we trained collectively on three datasets. Our method outperforms other methods with better detailed structures.</p>
 </div>

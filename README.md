@@ -20,7 +20,7 @@ Department of Automation, Tsinghua University
 all methods, we trained collectively on three datasets. Our method outperforms other methods with better detailed structures.</p>
 </div>
 
-<div style="width: 100%; text-align: center;">
+<div style="width: 100%; text-align: center;" align='center'>
     <table style="margin: 0 auto;">
         <thead>
             <tr>
